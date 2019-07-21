@@ -1,0 +1,293 @@
+*
+  box-sizing: border-box
+  line-height: 1.8em
+
+body
+  background-color: hsl(218, 28%, 13%)
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  color: hsl(0, 0%, 100%)
+  font-size: 14px
+  font-family: 'Raleway', sans-serif
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.1)
+  // -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  // text-shadow: #fff 0px 1px 1px
+
+section
+  padding: 5%
+
+p
+  font-family: 'Open Sans', sans-serif
+
+.container
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  width: 100%
+
+  a
+    text-decoration-line: none
+    color: white
+
+#intro
+  background: url('images/bg-curvy-desktop.svg') bottom center no-repeat hsl(217, 28%, 15%)
+  min-height: 500px
+  margin-bottom: 100px
+  header
+    // padding: 40px 40px
+    // padding: 20px
+    justify-self: flex-start
+    align-self: flex-start
+    display: flex
+    justify-content: space-between
+    // width: calc(100% - 80px)
+    width: 100%
+    .navbar
+      min-width: 200px
+      width: 80%
+      padding: 0
+      text-align: right
+    span
+      // margin: 0px 15px
+      // padding: 15px
+      padding: 5%
+    a
+      text-decoration: none
+      color: white
+      cursor: pointer
+.logo
+  max-width: 100px
+
+#introImage
+  height: auto
+  margin-top: 30px
+  width: 90%
+  max-width: 720px
+  max-height: 534px
+
+.intro
+  text-align: center
+  min-width: 200px
+  width: 100%
+  max-width: 1000px
+  h1
+    margin-top: 40px
+    text-rendering: optimizeLegibility
+    // font-size: 3em
+    font-size: 32px
+    font-weight: 400
+
+  p
+    // font-size: 2em
+    max-width: 500px
+    font-size: 16px
+    font-weight: 400
+    margin: 0 5px 10px 0
+
+
+.button
+  background-color: hsl(198, 60%, 50%)
+  // min-width: 200px
+  width: 200px
+  // max-width: 200px
+  color: white
+  font-size: 1em
+  padding: 10px 20px
+  border: 0
+  border-radius: 25px
+
+.main
+  background-color: hsl(218, 28%, 13%)
+  flex-wrap: wrap
+  flex-direction: row
+  margin: 0
+  // width: 100vw
+
+.services
+  min-width: 320px
+  margin-bottom: 100px
+  width: 35%
+  text-align: center
+  h2
+    font-size: 2em
+    font-weight: 700
+    margin: 30px 0 10px 0
+  p
+    font-size: 16px
+    font-weight: 100
+    width: 90%
+
+.works
+  margin-bottom: 50px
+  text-align: left
+  flex-direction: row
+  flex-wrap: wrap
+  .content
+    max-width: 500px
+    margin-left: 20px
+    a
+      color: hsl(176, 68%, 64%)
+      position: relative
+      margin-top: 20px
+      img
+        position: absolute
+        bottom: 1px
+        right: -15px
+        width: 12px
+        height: 12px
+      &::after
+        content: ""
+        position: absolute
+        background-color: hsl(176, 68%, 64%)
+        bottom: -4px
+        left: 0
+        height: 2px
+        width: calc(100% + 16px)
+
+#productive
+    min-width: 320px
+    width: 90%
+    height: auto
+    max-width: 415px
+    max-height: 465px
+
+#quotes
+    width: 80%
+    height: 50px
+
+.testimonials
+  // width: 100%
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-around
+  align-items: center
+
+.card
+    background-color: hsl(219, 30%, 18%)
+    min-width: 290px
+    width: 90%
+    max-width: 370px
+    height: auto
+    padding: 20px
+    margin: 0 0 50px 0
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    position: relative
+    justify-content: flex-start
+    font-weight: 400
+    border-radius: 12px
+    &:first-child::before
+      content: url(images/bg-quotes.png)
+      position: absolute
+      top: -45px
+      left: 0
+    img
+      border-radius: 50px
+      width: 40px
+      height: 40px
+    div
+      margin-left: 15px
+      h3
+        margin: 0
+      h4
+        display: inline
+        margin: 0
+
+.email
+  background-color: hsl(217, 28%, 15%)
+  flex-direction: row
+  flex-wrap: wrap
+  text-align: center
+  min-width: 300px
+  width: 75vw
+  height: auto
+  max-width: 768px
+  border-radius: 12px
+  padding: 40px 2em
+  transform: translateY(150px)
+  input
+    border-radius: 25px
+    border: 0
+    padding-left: 7px
+    width: 90%
+    max-width: 390px
+    padding: 10px 0 10px 7px
+    margin: 10px
+  h1
+    margin: 0
+  .button
+    width: 90%
+    max-width: 250px
+
+.footer
+  background-color: hsl(216, 53%, 9%)
+  width: 100%
+  padding: 190px 5% 15px 5%
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: space-between !important
+  align-items: flex-start !important
+  .contact
+    width: 300px
+    margin: 0
+    position: relative
+    padding-left: 40px
+  .imageF
+    width: 100%
+    margin: 0 0 40px 0
+
+#another
+  width: auto
+  margin: 0 20px
+
+#logoFooter
+  min-width: 200px
+
+#location
+  &::before
+    content: url(images/icon-location.svg)
+    position: absolute
+    left: 5px
+
+#number
+  &::before
+    content: url(images/icon-phone.svg)
+    position: absolute
+    left: 0
+
+#email
+  &::before
+    content: url(images/icon-email.svg)
+    position: absolute
+    left: 0
+
+.rs
+  align-self: center
+  width: 300px
+  display: flex
+  justify-content: center
+  ion-icon
+    border: 1px solid white
+    border-radius: 50px
+    width: 20px
+    height: 20px
+    padding: 10px
+    margin: 0 10px
+    cursor: pointer
+    transition: .5s
+    &:hover
+      color: hsl(198, 60%, 50%)
+      border-color: hsl(198, 60%, 50%)
+
+.ul
+  display: flex
+  justify-content: space-between
+  margin: 15px 0
+  div
+    width: 50%
+    margin: 0 20px
